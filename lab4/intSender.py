@@ -17,7 +17,7 @@ server_address = (host, port)
 
 while 1:
     for i in range(0, int(numMessage)):
-	number = str(random.randint(1, 100))
+        number = str(random.randint(1, 100))
         s.sendto(number.encode('utf-8'), server_address)
 
 s.shutdown(1)
